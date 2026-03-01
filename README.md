@@ -14,11 +14,11 @@ All routes are deployed under a common stage named v1 and share a single base in
 
 
 
-Level 1 of Gateway1
+## Level 1 of Gateway1
 
 Base Invoke URL:https://ryo4hnc97e.execute-api.ap-south-1.amazonaws.com/v1
 
-Route 1: /json/{todo}
+## Route 1: /json/{todo}
  Backend API
 
 Integrated with:
@@ -30,7 +30,7 @@ curl https://ryo4hnc97e.execute-api.ap-south-1.amazonaws.com/v1/json/todos
 Expected Output:
 Returns JSON data of todo item with ID 1
 
-Route 2: /weather
+## Route 2: /weather
  Backend API
 
 Integrated with:
@@ -45,7 +45,7 @@ longitude (required)
 hourly (optional)
 
 Example curl:"https://ryo4hnc97e.execute-api.ap-south-1.amazonaws.com/v1/weather?latitude=10&longitude=76"
-Route 3: /countries/{name}
+## Route 3: /countries/{name}
 Backend API
 
 Integrated with:
@@ -59,7 +59,8 @@ Expected Output:
 Returns country details for India.
 
 
-CORS Configuration
+##CORS Configuration
+
 CORS is enabled for all three routes to allow requests from any frontend application.
 Allowed Origins: *
 Allowed Methods: GET, OPTIONS
@@ -68,7 +69,7 @@ Allowed Headers: All default headers
 included Screenshoots of resources, stage_v1 ,json,weather and countries.
 
 
-Verification Summary
+## Verification Summary
 
 Single REST API
 Three routes under one base URL
@@ -103,9 +104,13 @@ AWS Free Tier account
 
 ## Deployment Steps
 cd level-2-terraform
+
 terraform init
+
 terraform plan
+
 terraform apply
+
 ## Output
 
 Terraform prints:
