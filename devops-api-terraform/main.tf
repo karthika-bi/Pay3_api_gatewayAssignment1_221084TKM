@@ -2,16 +2,11 @@ provider "aws" {
   region = "ap-south-1"
 }
 
-# -----------------------------
-# REST API
-# -----------------------------
 resource "aws_api_gateway_rest_api" "devops_api" {
   name = "devops-api"
 }
 
-# =====================================================
-# JSON ROUTE  -> /json/{todo}
-# =====================================================
+
 
 resource "aws_api_gateway_resource" "json" {
   rest_api_id = aws_api_gateway_rest_api.devops_api.id
@@ -50,9 +45,6 @@ resource "aws_api_gateway_integration" "json_integration" {
   }
 }
 
-# =====================================================
-# WEATHER ROUTE -> /weather
-# =====================================================
 
 resource "aws_api_gateway_resource" "weather" {
   rest_api_id = aws_api_gateway_rest_api.devops_api.id
@@ -87,9 +79,6 @@ resource "aws_api_gateway_integration" "weather_integration" {
   }
 }
 
-# =====================================================
-# COUNTRIES ROUTE -> /countries/{name}
-# =====================================================
 
 resource "aws_api_gateway_resource" "countries" {
   rest_api_id = aws_api_gateway_rest_api.devops_api.id
@@ -128,9 +117,6 @@ resource "aws_api_gateway_integration" "country_integration" {
   }
 }
 
-# =====================================================
-# DEPLOYMENT
-# =====================================================
 
 resource "aws_api_gateway_deployment" "deployment" {
   rest_api_id = aws_api_gateway_rest_api.devops_api.id
@@ -146,12 +132,11 @@ resource "aws_api_gateway_deployment" "deployment" {
   }
 }
 
-# =====================================================
-# STAGE
-# =====================================================
+
 
 resource "aws_api_gateway_stage" "v1" {
   deployment_id = aws_api_gateway_deployment.deployment.id
   rest_api_id   = aws_api_gateway_rest_api.devops_api.id
   stage_name    = "v1"
+
 }
