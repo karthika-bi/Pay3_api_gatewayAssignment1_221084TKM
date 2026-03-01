@@ -76,3 +76,48 @@ Stage name: v1
 CORS enabled
 Each route successfully integrates with its backend
 All curl commands tested and working
+
+## Level 2 – Terraform Automation
+
+This level recreates the same API Gateway infrastructure using Terraform.
+
+Infrastructure includes:
+
+Single REST API
+
+Three routes
+
+Stage: v1
+
+Automatic redeployment on configuration change
+
+Output of invoke URL
+
+## Prerequisites
+
+AWS CLI configured
+
+Terraform installed
+
+AWS Free Tier account
+
+## Deployment Steps
+cd level-2-terraform
+terraform init
+terraform plan
+terraform apply
+## Output
+
+Terraform prints:
+
+invoke_url =https://q080p77vn1.execute-api.ap-south-1.amazonaws.com/v1
+## Tear Down
+terraform destroy
+# FINAL CHECKLIST (Important for Evaluation)
+
+✔ Terraform files uploaded
+✔ .terraform folder NOT uploaded
+✔ No tfstate file uploaded
+✔ README includes deployment steps
+✔ Output section added
+✔ Screenshots included
