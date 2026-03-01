@@ -117,12 +117,12 @@ Terraform prints:
 
 invoke_url =https://q080p77vn1.execute-api.ap-south-1.amazonaws.com/v1
 ## Tear Down
-terraform destroy
-# FINAL CHECKLIST (Important for Evaluation)
 
-✔ Terraform files uploaded
-✔ .terraform folder NOT uploaded
-✔ No tfstate file uploaded
-✔ README includes deployment steps
-✔ Output section added
-✔ Screenshots included
+terraform destroy
+
+
+This project provided hands-on experience in designing, deploying, and automating a REST API using Amazon API Gateway. In Level 1, the API was manually configured through the AWS Console to understand how resources, methods, integrations, stages, and CORS settings function in real-world scenarios. This helped build a strong foundational understanding of API Gateway architecture.
+
+In Level 2, the same infrastructure was fully automated using Terraform, demonstrating Infrastructure as Code (IaC) principles. The automation ensures repeatability, consistency, and easy redeployment without manual intervention. Automatic redeployment triggers and output configuration further enhance maintainability and scalability.
+
+Overall, this project strengthened practical knowledge in cloud services, API integration, DevOps practices, and infrastructure automation, making it a strong foundational project in AWS and Terraform.
