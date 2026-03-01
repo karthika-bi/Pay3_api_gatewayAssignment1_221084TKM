@@ -15,7 +15,9 @@ All routes are deployed under a common stage named v1 and share a single base in
 
 
 Level 1 of Gateway1
+
 Base Invoke URL:https://ryo4hnc97e.execute-api.ap-south-1.amazonaws.com/v1
+
 Route 1: /json/{todo}
  Backend API
 
