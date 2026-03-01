@@ -120,6 +120,7 @@ invoke_url =https://q080p77vn1.execute-api.ap-south-1.amazonaws.com/v1
 
 terraform destroy
 
+## Conclusion
 
 This project provided hands-on experience in designing, deploying, and automating a REST API using Amazon API Gateway. In Level 1, the API was manually configured through the AWS Console to understand how resources, methods, integrations, stages, and CORS settings function in real-world scenarios. This helped build a strong foundational understanding of API Gateway architecture.
 
