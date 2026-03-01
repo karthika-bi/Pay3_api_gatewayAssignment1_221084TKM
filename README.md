@@ -26,6 +26,7 @@ JSONPlaceholder
 
 This route forwards the full path parameter {todo} to the backend API.
 curl https://ryo4hnc97e.execute-api.ap-south-1.amazonaws.com/v1/json/todos
+
 Expected Output:
 Returns JSON data of todo item with ID 1
 
