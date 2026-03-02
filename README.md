@@ -25,6 +25,7 @@ Integrated with:
 JSONPlaceholder
 
 This route forwards the full path parameter {todo} to the backend API.
+
 curl https://ryo4hnc97e.execute-api.ap-south-1.amazonaws.com/v1/json/todos
 
 Expected Output:
@@ -72,10 +73,15 @@ included Screenshoots of resources, stage_v1 ,json,weather and countries.
 ## Verification Summary
 
 Single REST API
+
 Three routes under one base URL
+
 Stage name: v1
+
 CORS enabled
+
 Each route successfully integrates with its backend
+
 All curl commands tested and working
 
 ## Level 2 – Terraform Automation
